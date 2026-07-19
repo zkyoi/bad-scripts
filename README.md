@@ -1,2 +1,2 @@
-# bad-scripts
-Bad scripts that are unkept from random games
+# Bad Scripts
+These scripts aren't meant to be optimized or work great.
