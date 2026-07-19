@@ -11,6 +11,6 @@ if Event then
 	task.wait()
 	
 	Event:FireServer(
-		9007199254740992 -- Don't go any larger because int overflow
+		1000000000000000000 -- Don't go any larger because int overflow
 	)
 end
