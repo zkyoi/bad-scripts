@@ -1,12 +1,14 @@
 local Workspace = game:GetService("Workspace")
 
 Workspace.ChildAdded:Connect(function(child)
-    if child.Name == "Shell" then
-		child:Destroy()
+	if child.Name == "Shell" then
+		task.defer(function()
+			child:Destroy()
+		end)
 	end
 end)
 
-for _, obj in pairs(Workspace:GetChildren()) do
+for _, obj in Workspace:GetChildren() do
 	if obj.Name == "Shell" then
 		obj:Destroy()
 	end
